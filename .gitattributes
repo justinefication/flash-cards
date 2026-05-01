@@ -1,0 +1,20 @@
+* text=auto eol=lf
+
+# Source Codes
+*.vue   text    diff=html
+*.svg   text
+*.css           diff=css
+*.html          diff=html
+*.json  text
+
+# Configs
+package.json      text
+package-lock.json text merge=union -diff
+pnpm-lock.yaml    text merge=union -diff
+
+# Documentation
+*.md              text diff=markdown
+*README*          text
+
+# Build Output
+dist/** -diff
